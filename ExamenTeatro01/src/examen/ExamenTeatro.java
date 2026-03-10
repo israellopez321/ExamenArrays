@@ -1,6 +1,5 @@
 package examen;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class ExamenTeatro {
@@ -12,7 +11,11 @@ public class ExamenTeatro {
 		// Creamos Array de la sala
 		String sala[][] = new String[6][10];
 
-		Arrays.fill(sala, "L");
+		for (int i = 0; i < 6; i++) {
+		    for (int j = 0; j < 10; j++) {
+		        sala[i][j] = "L";
+		    }
+		}
 
 		// Menu Teatro
 		System.out.println("Teatro");
